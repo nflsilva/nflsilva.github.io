@@ -9,7 +9,7 @@ const Footer = () =>  (
         <div className="row">
 
           <div className="col-8">
-            <p>2024 Nelson Lopes da Silva</p>
+            <p>2026 Nelson Lopes da Silva</p>
           </div>
 
           <div className="col-4 d-flex justify-content-end">

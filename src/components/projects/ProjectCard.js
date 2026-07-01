@@ -6,9 +6,11 @@ import { iconFromDetailType } from '../../constants/data';
 function ProjectCard(props) {
   let detail = iconFromDetailType(props.type);
   return (
-    <div className="card shadow-lg">
+    <div className="card shadow-lg position-relative">
       { props.professional && 
-        <span className="position-absolute top-0 start-100 translate-middle p-2">🟥</span>
+        <span className="position-absolute top-0 start-0 px-3 py-1" style={{ transform: 'translate(-10%, -10%)', backgroundColor: '#d32f2f', color: 'white', borderRadius: '0.25rem', fontSize: '0.8rem', fontWeight: '600' }}>
+          Under professional context
+        </span>
       }
       <img className="card-img-top img-fluid" src={ props.image } alt={ props.title } />
       <div className="card-body">

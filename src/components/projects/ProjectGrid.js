@@ -10,7 +10,7 @@ const ProjectGrid = (props) =>  (
                 <ProjectCard title={p.title} description={p.description} image={p.image} href={p.details} tags={p.tags} type={p.detailType} professional={p.professional}/>
             </ProjectGridColumn>
         ))}
-    </div>
+        </div>
     </div>
 
 );

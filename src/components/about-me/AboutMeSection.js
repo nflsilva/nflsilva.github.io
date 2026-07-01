@@ -5,13 +5,17 @@ import Interests from '../about-me/Interests';
 
 function AboutMeSection(props) {
   return (
-        <Section title="About me" description={props.about.description}>
-            <Timeline timeline={props.about.timeline} />
-            <Interests interests={props.about.interests} />
-            <div className="row col-md-10">
-                <p className="text-muted">For more detailed information, check out <a href={props.about.cv}>my CV</a>.</p>
-            </div>
-        </Section>
+        <div className="full-screen-section">
+            <Section title="About me" description={props.about.description}>
+                <Timeline timeline={props.about.timeline} />
+                <Interests interests={props.about.interests} />
+                { props.about.cv && (
+                    <div className="row col-md-10">
+                        <p className="text-muted">For more detailed information, check out <a href={props.about.cv}>my CV</a>.</p>
+                    </div>
+                )}
+            </Section>
+        </div>
   );
 }
 
